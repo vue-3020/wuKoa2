@@ -29,5 +29,14 @@ app.use(bodyParser());
 ### 路由
 ```
 npm install --save koa-router
+```
+### ejs模板
+```
+cnpm install --save koa-views
+npm install --save ejs
+```
 
+### 存放静态文件中间件
+```
+npm install --save koa-static
 ```
