@@ -19,8 +19,15 @@ app.use(async (ctx)=>{
 app.listen(3000)
 console.log('[demo] start-quick is starting at port 3000');
 ```
-### post 获取参数
+### post 获取参数  @3是版本
 ```
-query和querystring区别
+npm install --save koa-bodyparser@3
+//引入
+const bodyParser = require('koa-bodyparser');
+app.use(bodyParser());
+```
+### 路由
+```
+npm install --save koa-router
 
 ```

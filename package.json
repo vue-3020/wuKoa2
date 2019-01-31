@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/vue-3020/wuKoa2#readme",
   "dependencies": {
-    "koa": "^2.7.0"
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.4.0"
   }
 }

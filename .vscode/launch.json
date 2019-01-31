@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/3POST请求.js"
+      "program": "${workspaceFolder}/5Koa2路由.js"
     }
   ]
 }
