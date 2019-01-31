@@ -1,0 +1,23 @@
+{
+  "name": "wuKoa2",
+  "version": "1.0.0",
+  "description": "```\r npm init -y\r npm install --save koa\r ```\r ### koa应用\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vue-3020/wuKoa2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vue-3020/wuKoa2/issues"
+  },
+  "homepage": "https://github.com/vue-3020/wuKoa2#readme",
+  "dependencies": {
+    "koa": "^2.7.0"
+  }
+}
