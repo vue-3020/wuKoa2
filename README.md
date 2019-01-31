@@ -3,6 +3,11 @@
 npm init -y
 npm install --save koa
 ```
+### 启动项目  index.js是文件名
+```
+node index.js
+```
+
 ### koa应用
 ```
 const  Koa = require('koa')
@@ -13,4 +18,9 @@ app.use(async (ctx)=>{
 })
 app.listen(3000)
 console.log('[demo] start-quick is starting at port 3000');
+```
+### post 获取参数
+```
+query和querystring区别
+
 ```
