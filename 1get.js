@@ -26,5 +26,5 @@ app.use(async (ctx) => {
     ctx_querystring //"ctx_querystring":"name=xiaoming&age=20"
   }
 })
-app.listen(3000)
+app.listen(3001)
 console.log('[demo] start-quick is starting at port 3000');

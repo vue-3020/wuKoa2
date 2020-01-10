@@ -7,10 +7,10 @@ app.use(async (ctx) => {
     ctx.cookies.set(
       'MyName',
       'bunengshizhongwen', {
-        domain: '127.0.0.1', // 写cookie所在的域名
+        // domain: '127.0.0.1', // 写cookie所在的域名
         path: '/index', // 写cookie所在的路径
         maxAge: 1000 * 60 * 60 * 24, // cookie有效时长
-        expires: new Date('2019-2-31'), // cookie失效时间
+        expires: new Date('2022-2-31'), // cookie失效时间
         httpOnly: false, // 是否只用于http请求中获取
         overwrite: false // 是否允许重写
       }

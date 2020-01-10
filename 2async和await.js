@@ -1,3 +1,5 @@
+//async 声明一个异步方法
+//await 等待一个异步方法完成
 function box() {
   return new Promise(resolve => {
     setTimeout(() => {
