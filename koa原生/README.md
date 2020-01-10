@@ -202,3 +202,20 @@ MongoClient.connect(DB_URL, function(err, db) {
 ```
 node 11mongdb.js  
 ```
+
+# 代码模块化 模块分级
+
+koa 脚手架生成项目
+```
+//全局安装
+cnpm install koa-generator -g
+
+//创建项目
+koa koa_test
+
+//进入项目
+cd koa_test
+
+//下载依赖
+cnpm install
+```
