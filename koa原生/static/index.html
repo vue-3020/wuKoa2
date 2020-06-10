@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <p> {{ message }}</p>
+    <button @click="btn">点击发送请求</button>
+    <br>
+    <br>
+    <ul>
+      <li v-for="(data,index) in datas" :key="index">
+        <label>姓名：<span>{{data.name}}</span></label>
+        <label>年龄：<span>{{data.age}}</span></label>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: '在静态文件中static 配置index页面，node app.js的时候就可以直接访问到',
+      datas: []
+    },
+    methods: {
+      btn() {
+        let _this = this
+        //通过 fetch向后台发送请求
+        fetch('/todo').then(res => {
+          // return res.text()
+          return res.json()
+        }).then(data => {
+          if (!data.code) {
+            _this.datas = data.data
+            console.log(data)
+          }
+        })
+      }
+    }
+  })
+</script>

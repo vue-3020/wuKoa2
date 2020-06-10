@@ -1,0 +1,20 @@
+ul{
+  border: 1px solid #ccc;
+  margin: auto;
+  padding: 0;
+  width: 400px;
+  min-height: 400px;
+}
+ul >li{
+  padding:0 20px;
+  height: 40px;
+  line-height: 40px;
+  list-style: none;
+  border-bottom:1px solid #ccc ;
+}
+ul >li>label{
+  margin-right: 20px;
+}
+ul >li:hover{
+  background:rgb(219, 215, 215)
+}
